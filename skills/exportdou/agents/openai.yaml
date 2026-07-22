@@ -1,0 +1,4 @@
+interface:
+  display_name: "ExportDou"
+  short_description: "Export public Douyin comments for agent analysis"
+  default_prompt: "Use $exportdou to export and preview comments from this Douyin link."

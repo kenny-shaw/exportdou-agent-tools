@@ -1,0 +1,49 @@
+{
+  "name": "exportdou",
+  "version": "1.0.0",
+  "description": "Official ExportDou CLI for exporting public Douyin comments and replies to CSV or Excel",
+  "type": "module",
+  "bin": {
+    "exportdou": "./dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm test",
+    "test": "npm run build && node --test --test-concurrency=1 tests/*.test.mjs"
+  },
+  "keywords": [
+    "exportdou",
+    "douyin",
+    "douyin-comments",
+    "comment-export",
+    "csv",
+    "xlsx",
+    "cli",
+    "ai-agent",
+    "agent-skill"
+  ],
+  "author": "Kenny Shaw",
+  "license": "MIT",
+  "homepage": "https://exportdou.cn/agents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenny-shaw/exportdou-agent-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenny-shaw/exportdou-agent-tools/issues"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  }
+}
