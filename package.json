@@ -9,9 +9,10 @@
   ],
   "scripts": {
     "build": "npm run build --workspace exportdou",
+    "check:registry": "node scripts/check-public-registry.mjs",
     "check:skill-sync": "bash scripts/check-skill-sync.sh",
     "cli": "node packages/cli/dist/cli.js",
-    "test": "npm run test --workspace exportdou && npm run check:skill-sync",
+    "test": "npm run test --workspace exportdou && npm run check:skill-sync && npm run check:registry",
     "release": "node scripts/release.mjs"
   },
   "author": "Kenny Shaw",
