@@ -4,7 +4,7 @@
   "description": "Official ExportDou CLI for exporting public Douyin comments and replies to CSV or Excel",
   "type": "module",
   "bin": {
-    "exportdou": "./dist/cli.js"
+    "exportdou": "dist/cli.js"
   },
   "exports": {
     ".": "./dist/index.js"
