@@ -38,3 +38,4 @@ clawhub install exportdou
 - npm: https://www.npmjs.com/package/exportdou
 - skills.sh: https://www.skills.sh/kenny-shaw/exportdou-agent-tools/exportdou
 - ClawHub: https://clawhub.ai/kenny-shaw/skills/exportdou
+- SkillHub.club: https://www.skillhub.club/skills/a8e6eca6-exportdou
