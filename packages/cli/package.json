@@ -1,6 +1,6 @@
 {
   "name": "exportdou",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official ExportDou CLI for exporting public Douyin comments and replies to CSV or Excel",
   "type": "module",
   "bin": {
