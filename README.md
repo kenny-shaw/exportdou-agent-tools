@@ -27,3 +27,5 @@ The Skill teaches compatible agents to submit each export once, preserve the tas
 - Website: https://exportdou.cn
 - API: https://exportdou.cn/developers
 - Skill: https://exportdou.cn/SKILL.md
+- npm: https://www.npmjs.com/package/exportdou
+- skills.sh: https://www.skills.sh/kenny-shaw/exportdou-agent-tools/exportdou
