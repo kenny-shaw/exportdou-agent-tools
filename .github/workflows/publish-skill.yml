@@ -1,0 +1,21 @@
+name: Publish Agent Skill
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'skills/exportdou/**'
+      - '.github/workflows/publish-skill.yml'
+  workflow_dispatch:
+
+jobs:
+  clawhub:
+    uses: openclaw/clawhub/.github/workflows/skill-publish.yml@v1
+    with:
+      skill_path: skills/exportdou
+      owner: kenny-shaw
+      dry_run: false
+      tags: latest
+    secrets:
+      clawhub_token: ${{ secrets.CLAWHUB_TOKEN }}

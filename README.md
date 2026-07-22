@@ -1,6 +1,6 @@
 # ExportDou Agent Tools
 
-Official CLI and Agent Skill for ExportDou (https://exportdou.cn), a durable public Douyin comment export service.
+ExportDou（https://exportdou.cn）的官方 CLI 与 Agent Skill，用于稳定、可恢复地导出公开抖音视频评论。
 
 ## CLI
 
@@ -12,20 +12,29 @@ npx exportdou preview "<task-id>" --limit 20 --json
 npx exportdou download "<task-id>" --output comments.csv
 ~~~
 
-The CLI never asks for Douyin cookies. It submits public video links to ExportDou, returns a task ID immediately, and lets the task continue in the cloud.
+CLI 不会索要抖音 Cookie。它只把用户提供的公开视频链接提交给 ExportDou，立即返回任务 ID，并让任务在云端继续运行。
 
 ## Agent Skill
+
+通过 skills.sh 安装：
 
 ~~~bash
 npx skills add kenny-shaw/exportdou-agent-tools --skill exportdou
 ~~~
 
-The Skill teaches compatible agents to submit each export once, preserve the task ID, use one-shot status checks, preview small JSON samples for analysis, and download full CSV/XLSX results when needed.
+通过 ClawHub 安装：
 
-## Links
+~~~bash
+clawhub install exportdou
+~~~
 
-- Website: https://exportdou.cn
-- API: https://exportdou.cn/developers
-- Skill: https://exportdou.cn/SKILL.md
+该 Skill 会指导兼容的 Agent：每个导出任务只提交一次、保存任务 ID、按建议间隔查询状态、只读取少量 JSON 评论用于分析，并在需要时下载完整 CSV/XLSX 文件。
+
+## 相关链接
+
+- 官网: https://exportdou.cn
+- API 文档: https://exportdou.cn/developers
+- Skill 原文: https://exportdou.cn/SKILL.md
 - npm: https://www.npmjs.com/package/exportdou
 - skills.sh: https://www.skills.sh/kenny-shaw/exportdou-agent-tools/exportdou
+- ClawHub: https://clawhub.ai/kenny-shaw/skills/exportdou
