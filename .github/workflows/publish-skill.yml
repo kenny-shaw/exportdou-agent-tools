@@ -9,6 +9,10 @@ on:
       - '.github/workflows/publish-skill.yml'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   clawhub:
     uses: openclaw/clawhub/.github/workflows/skill-publish.yml@ee9fac51cd174a0b015e60f334bda4e919bff220
