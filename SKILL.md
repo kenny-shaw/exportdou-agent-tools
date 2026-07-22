@@ -1,6 +1,6 @@
 ---
 name: exportdou
-description: Export public Douyin video comments and optional replies to CSV or Excel, inspect video metadata and comment counts, preview extracted comments for analysis, download complete results, check ExportDou credits, and manage durable export jobs. Use when the user asks to extract, export, collect, download, inspect, summarize, or analyze 抖音评论、评论回复、用户反馈 or Douyin comments from one or more public video links or share texts.
+description: 导出公开抖音视频的一级评论和可选回复到 CSV 或 Excel，查看视频信息与评论数量，预览评论用于用户反馈、舆情、选题或市场分析，并管理可恢复的异步导出任务。用户要求提取、导出、采集、下载、查看、总结或分析抖音评论、评论回复、用户反馈，或提供 Douyin 视频公开链接与分享文案时使用。
 ---
 
 # ExportDou
